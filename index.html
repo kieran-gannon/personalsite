@@ -3,10 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kieran's Site</title>
+  <title>Kieran Gannon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1d2021;
+      color: #ebdbb2;
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 680px;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .header {
+      border-left: 4px solid #fabd2f;
+      padding-left: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .header h1 {
+      font-size: 2.25rem;
+      color: #fabd2f;
+      letter-spacing: 0.05em;
+    }
+
+    .header .subtitle {
+      margin-top: 0.4rem;
+      color: #a89984;
+      font-size: 0.95rem;
+    }
+
+    .header .subtitle span {
+      color: #8ec07c;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #928374;
+      margin-bottom: 0.75rem;
+    }
+
+    .about {
+      background-color: #282828;
+      border: 1px solid #3c3836;
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      line-height: 1.7;
+      color: #d5c4a1;
+      font-size: 0.95rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background-color: #282828;
+      border: 1px solid #3c3836;
+      border-radius: 4px;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-list li .label {
+      color: #928374;
+      min-width: 60px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .contact-list a {
+      color: #83a598;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .contact-list a:hover {
+      color: #8ec07c;
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      color: #504945;
+      font-size: 0.75rem;
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm Kieran</h1>
-  <p>Welcome to my personal site.</p>
+  <div class="container">
+    <div class="header">
+      <h1>Kieran Gannon</h1>
+      <p class="subtitle">Cybersecurity Student &mdash; <span>Mount St. Mary's University</span></p>
+    </div>
+
+    <section>
+      <p class="section-label">About</p>
+      <div class="about">
+        Cybersecurity student at Mount St. Mary's University, graduating Fall 2026.
+        Focused on building practical skills in security analysis, network defense, and ethical hacking.
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Contact</p>
+      <ul class="contact-list">
+        <li>
+          <span class="label">Email</span>
+          <a href="mailto:kieran@kierangannon.net">kieran@kierangannon.net</a>
+        </li>
+        <li>
+          <span class="label">GitHub</span>
+          <a href="https://github.com/kieran-gannon" target="_blank" rel="noopener">github.com/kieran-gannon</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="footer">kierangannon.net</div>
+  </div>
 </body>
 </html>
