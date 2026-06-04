@@ -57,13 +57,19 @@
       padding-left: 0;
     }
 
-    .output .big-name {
-      font-size: 2.4rem;
-      font-weight: bold;
+    .output .ascii-name {
       color: #fabd2f;
-      line-height: 1.1;
+      font-size: 0.6rem;
+      line-height: 1.2;
       margin: 0.5rem 0 0.75rem;
-      letter-spacing: 0.04em;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    @media (min-width: 600px) {
+      .output .ascii-name {
+        font-size: 0.78rem;
+      }
     }
 
     .output .tagline {
@@ -154,7 +160,19 @@
       <span class="user">kieran</span><span class="at">@</span><span class="host">kierangannon</span><span class="at">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cmd">cat ./welcome.txt</span>
     </div>
     <div class="output">
-      <div class="big-name">KIERAN<br>GANNON</div>
+      <pre class="ascii-name">
+ _  _   ___  _____  ____      _        _   _
+| |/ / |_ _|| ____||  _ \    / \     | \ | |
+| ' /   | | | _|   | |_) |  / _ \    |  \| |
+| . \   | | | |___ |  _ &lt;  / ___ \   | |\  |
+|_|\_\ |___||_____||_| \_\/_/   \_\  |_| \_|
+
+  ____      _        _   _    _   _    ___    _   _
+ / ___|    / \     | \ | |  | \ | |  / _ \ | \ | |
+| |  _    / _ \    |  \| |  |  \| | | | | ||  \| |
+| |_| |  / ___ \   | |\  |  | |\  | | |_| || |\  |
+ \____|  /_/   \_\  |_| \_| |_| \_|  \___/ |_| \_|
+</pre>
       <p class="tagline">Cybersecurity student at Mount St. Mary's University.</p>
       <p class="tagline">Graduating Fall 2026. Interested in AI security, risk management, and secure system design.</p>
       <p class="meta">kierangannon.net &middot; last updated 2026-06-03</p>
