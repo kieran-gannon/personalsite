@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kieran Gannon — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 0.75in 0.75in;
+      max-width: 8.5in;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20pt;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-line {
+      text-align: center;
+      font-size: 9.5pt;
+      color: #333;
+      margin-bottom: 1rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-line a { color: #1a56a0; text-decoration: none; }
+
+    hr.section-rule {
+      border: none;
+      border-top: 1.5px solid #1a56a0;
+      margin: 0.15rem 0 0.4rem;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: bold;
+      color: #1a56a0;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 0.75rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .section { margin-bottom: 0.25rem; }
+
+    p { margin-bottom: 0.3rem; line-height: 1.45; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.1rem;
+    }
+
+    .entry-title { font-weight: bold; font-size: 10.5pt; }
+    .entry-meta { font-style: italic; font-size: 9.5pt; color: #444; }
+
+    ul {
+      margin-left: 1.2em;
+      margin-bottom: 0.3rem;
+      list-style-type: disc;
+    }
+
+    ul li {
+      margin-bottom: 0.2rem;
+      line-height: 1.45;
+    }
+
+    .project-title { font-weight: bold; }
+    .project-tech { font-weight: normal; color: #444; }
+
+    .skills-category { font-weight: bold; margin-top: 0.3rem; }
+
+    @media print {
+      body { padding: 0.5in 0.6in; }
+      a { color: #1a56a0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>KIERAN GANNON</h1>
+  <p class="contact-line">
+    Byram Township, NJ &nbsp;|&nbsp; (973) 525-3907 &nbsp;|&nbsp;
+    <a href="mailto:kieran@kierangannon.net">kieran@kierangannon.net</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/kieran-gannon">github.com/kieran-gannon</a>
+  </p>
+
+  <!-- Professional Summary -->
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <hr class="section-rule">
+    <p>Cybersecurity student with a working knowledge of AI/LLM fundamentals and hands-on experience in AI risk assessment and security tooling. Focused interest in AI governance, red teaming, and LLM vulnerability research. Seeking entry-level roles at the overlap of AI and security.</p>
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <h2>Education</h2>
+    <hr class="section-rule">
+
+    <div class="entry-header">
+      <span class="entry-title">B.S. Cybersecurity &mdash; Mount St. Mary's University</span>
+      <span class="entry-meta">Expected December 2026</span>
+    </div>
+    <p>Relevant Coursework: <strong>Network Security</strong>, <strong>Secure Systems Design &amp; Risk Management</strong>, Network Systems and Design, Systems Operations Management, UNIX/Windows OS</p>
+
+    <div class="entry-header" style="margin-top: 0.4rem;">
+      <span class="entry-title">University of New Haven</span>
+      <span class="entry-meta">Transferred May 2024</span>
+    </div>
+    <p>Relevant Coursework: Script Programming/Python, Intermediate Programming (C/C++), Technical Writing in Computing</p>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <h2>Projects</h2>
+    <hr class="section-rule">
+
+    <p><span class="project-title">AI Risk Assessment &mdash; Facial Recognition Security System</span> <span class="project-tech">| <em>Secure Systems Design &amp; Risk Management (Course Assignment)</em></span></p>
+    <ul>
+      <li>Developed a structured risk register evaluating a nationwide AI facial recognition deployment across five risk areas including data security, regulatory compliance, algorithmic bias, and reputational impact</li>
+      <li>Applied probability/impact matrices and defined response strategies, responsible entities, and monitoring cadences; assessed multi-state legal exposure from biometric surveillance laws</li>
+      <li>Identified ethical risks including training data bias leading to discriminatory outcomes, and recommended diverse dataset audits and quarterly fairness reviews by an AI development team</li>
+    </ul>
+
+    <p style="margin-top: 0.4rem;"><span class="project-title">AI Nmap Analyzer</span> <span class="project-tech">| Python, Ollama, Nmap | <a href="https://github.com/kieran-gannon/ai-nmap-analyzer">github.com/kieran-gannon/ai-nmap-analyzer</a></span></p>
+    <ul>
+      <li>Built a conversational AI security agent using a locally hosted LLM (Gemma via Ollama) with session memory, enabling iterative natural language network reconnaissance via Nmap</li>
+      <li>Implemented a two-stage LLM pipeline for command generation and output analysis, with security controls including command validation, privilege escalation detection, and mandatory user confirmation</li>
+      <li>Designed with local-only LLM inference (no cloud API calls) to ensure sensitive network topology data never leaves the user's machine</li>
+    </ul>
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <h2>Skills</h2>
+    <hr class="section-rule">
+
+    <p class="skills-category">Cybersecurity</p>
+    <ul>
+      <li>Vulnerability assessment, risk management, secure systems design, network security, UNIX/Windows environments</li>
+    </ul>
+
+    <p class="skills-category">AI &amp; LLM</p>
+    <ul>
+      <li>Local model deployment (Ollama, MLX), prompt engineering, NIST AI RMF, probability/impact analysis, agentic workflows; familiar with LLM security risks including prompt injection and adversarial inputs</li>
+    </ul>
+
+    <p class="skills-category">Programming</p>
+    <ul>
+      <li>Python scripting and automation; C/C++ fundamentals</li>
+    </ul>
+  </div>
+
+  <!-- Experience -->
+  <div class="section">
+    <h2>Experience</h2>
+    <hr class="section-rule">
+
+    <div class="entry-header">
+      <span class="entry-title">Seasonal Maintenance &mdash; NJ State Park Service, Waterloo Village</span>
+      <span class="entry-meta">2020&ndash;2026</span>
+    </div>
+    <ul>
+      <li>Maintained historic buildings and park grounds in small teams, managing competing priorities with minimal supervision across a six-year tenure</li>
+    </ul>
+  </div>
+
+</body>
+</html>

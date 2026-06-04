@@ -47,6 +47,24 @@
       border: 1px solid #e8a020;
     }
 
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      border: 1px solid #e8a020;
+      color: #e8a020;
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .download-btn:hover {
+      background: #e8a020;
+      color: #0d0e0b;
+    }
+
     .terminal {
       max-width: 680px;
       margin: 0 auto;
@@ -146,6 +164,7 @@
     <a href="#" class="active">/home</a>
     <a href="#about">/about</a>
     <a href="#contact">/contact</a>
+    <a href="#resume">/resume</a>
   </nav>
 
   <div class="terminal">
@@ -179,6 +198,26 @@
           <a href="https://github.com/kieran-gannon" target="_blank" rel="noopener">github.com/kieran-gannon</a>
         </li>
       </ul>
+    </div>
+
+    <div class="prompt" id="resume">
+      <span class="user">kieran</span><span class="at">@</span><span class="host">kierangannon</span><span class="at">:</span><span class="path">~</span><span class="at">$</span> <span class="cmd">ls -lh ./resume</span>
+    </div>
+    <div class="output">
+      <div class="col-header">
+        <span>file</span>
+        <span>description</span>
+      </div>
+      <hr class="divider">
+      <ul class="file-list">
+        <li>
+          <span class="col-type">resume.pdf</span>
+          <span>
+            <span style="color:#c8c0a8;">Kieran_Gannon_Resume.pdf</span>
+          </span>
+        </li>
+      </ul>
+      <a class="download-btn" href="resume.pdf" download="Kieran_Gannon_Resume.pdf">&#8659; download resume</a>
     </div>
 
     <div class="prompt">
